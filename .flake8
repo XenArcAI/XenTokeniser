@@ -1,0 +1,58 @@
+[flake8]
+# Maximum line length
+max-line-length = 88
+
+# Maximum complexity
+max-complexity = 18
+
+# Exclude common directories
+exclude = 
+    .git,
+    __pycache__,
+    build,
+    dist,
+    .pytest_cache,
+    .mypy_cache,
+    .venv,
+    venv,
+    .tox,
+    .eggs,
+    *.egg-info,
+    .idea,
+    .vscode,
+    .github
+
+# Ignore specific rules
+# E203: Whitespace before ':' (handled by Black)
+# W503: Line break occurred before a binary operator (handled by Black)
+# E501: Line too long (handled by Black)
+# E731: Do not assign a lambda expression, use a def
+# F401: Module imported but unused (handled by autoflake)
+# F403: 'from module import *' used; unable to detect undefined names
+# F405: Name may be undefined, or defined from star imports: module
+# E402: Module level import not at top of file (handled by isort)
+# E266: Too many leading '#' for block comment
+# E266: Too many leading '#' for block comment
+# E266: Too many leading '#' for block comment
+ignore = E203, W503, E501, E731, F401, F403, F405, E402, E266
+
+# Per-file-ignores =
+#     */__init__.py: F401
+
+# Show source of configuration
+show-source = true
+
+# Output format
+format = default
+
+# Show statistics
+statistics = true
+
+# Count total number of errors
+count = true
+
+# Exit with non-zero status if any issues are found
+exit-zero = false
+
+# Show line numbers
+show-source = true
